@@ -19,7 +19,9 @@ const instance = autocannon(
   (err, result) => {
     if (err) console.error(err);
 
-    const fileName = resolve("results/" + result.title + "_" + new Date().toISOString() + ".json");
+    const fileName = resolve(
+      "results/" + result.title + "_" + new Date().toISOString().replace(/:|\./g, "_") + ".json"
+    );
 
     writeFile(fileName, JSON.stringify(result, null, 2), {
       encoding: "utf-8",
