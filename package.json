@@ -1,11 +1,12 @@
 {
   "name": "mercurius-bench",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "Benchmarking mercurius changes",
+  "license": "MIT",
+  "author": "PabloSz <pablosaez1995@gmail.com>",
   "main": "index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "MIT"
+    "start": "pnpm -r --filter bench start"
+  }
 }

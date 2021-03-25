@@ -1,7 +1,10 @@
 {
   "name": "bench",
   "version": "1.0.0",
+  "private": true,
   "description": "",
+  "license": "MIT",
+  "author": "PabloSz <pablosaez1995@gmail.com>",
   "type": "module",
   "main": "index.js",
   "scripts": {
@@ -10,8 +13,6 @@
     "services": "concurrently --raw -k \"node service1.js\" \"node service2.js\"",
     "start": "concurrently --raw -k pnpm:bench pnpm:gateway pnpm:services"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@types/autocannon": "^4.1.0",
     "autocannon": "^7.0.5",
