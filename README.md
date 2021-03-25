@@ -27,7 +27,7 @@ Then you have two benchmarking files:
 - bench/bench.js - Autocannon instance
 - bench-client-setup.cjs - Autocannon worker preparation
 
-Then you have the folder **mercurius**, whish is a "git subtree" of the original repo, you can modify it as you need.
+Then you have the folder **mercurius**, which is a "git subtree" of the original repo, you can modify it as you need.
 
 ## Benchmarking
 
