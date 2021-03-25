@@ -1,0 +1,25 @@
+{
+  "name": "bench",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "bench": "wait-on tcp:4000 && node bench.js",
+    "gateway": "wait-on tcp:4001 tcp:4002 && node gateway.js",
+    "services": "concurrently --raw -k \"node service1.js\" \"node service2.js\"",
+    "start": "concurrently --raw -k pnpm:bench pnpm:gateway pnpm:services"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/autocannon": "^4.1.0",
+    "autocannon": "^7.0.5",
+    "concurrently": "^6.0.0",
+    "fastify": "^3.14.0",
+    "graphql": "^15.5.0",
+    "mercurius": "workspace:^7.3.0",
+    "mercurius-codegen": "^1.3.8",
+    "wait-on": "^5.3.0"
+  }
+}

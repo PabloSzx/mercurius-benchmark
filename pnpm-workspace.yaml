@@ -1,4 +1,3 @@
 packages:
   - bench
-  - "examples/*"
-  - "internal/*"
+  - mercurius
